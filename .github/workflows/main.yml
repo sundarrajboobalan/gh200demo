@@ -7,9 +7,9 @@ jobs:
       - name: Print greeting
         run: echo "Hello World!"
       - name: Print goodbye
-        run: echo "Done - bye!"
+        run: echo "Done - bye!
   second-job:
-    # needs: first-job
+    needs: first-job
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting
